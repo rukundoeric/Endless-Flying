@@ -2,11 +2,21 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #00a5a5 !important;
+  background-color: #b9ffe4 !important;
 }
 
 #game-content {
   border: 20px solid rgb(22, 131, 76);
   border-radius: 30px;
   overflow: hidden;
+}
+
+.welcome-content {
+  border: 1px solid yellow;
+}
+
+.conte-div {
+  border: 1px solid red;
+  width: 500px !important;
+  height: 350px !important;
 }
