@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Game Title Here</title>
+  <title>Endless Frying</title>
+  <link rel="icon" href="../assets/images/plane.ico" />
   <!-- CSS only -->
   <link rel="stylesheet" href="../assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -49,48 +50,7 @@
                     <th>Score:</th>
                   </tr>
                 </thead>
-                <tbody id="leaderboard-data">
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <td>Eric</td>
-                    <td>34</td>
-                  </tr>
-                </tbody>
+                <tbody id="leaderboard-data"></tbody>
               </table>
             </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -109,7 +69,8 @@
     </div>
     <div id="game-content"></div>
     <div class="d-flex justify-content-center align-items-center">
-      <div class="d-flex game-btns-c">
+      <h6 id="save-loading" style="display: none;">Saving score ....</h6>
+      <div id="game-btns-c" class="game-btns-c" style="display: flex;">
           <button id="play-btn" type="submit" class="my-2">
             <img src="../assets/images/play.png" type="submit" alt="">
           </button>

@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable no-undef */
 import { gameConfig } from './config';
+import { saveScoreInfo } from './ui_control';
 
 const game = new Phaser.Game(gameConfig);
 let score = 0;
@@ -79,6 +80,9 @@ const playingScene = {
   },
   gameOver() {
     game.state.start('gameOverScene');
+    if (score > 0) {
+      saveScoreInfo(score);
+    }
   },
 };
 

@@ -1,14 +1,30 @@
 /* eslint-disable import/no-cycle */
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable camelcase */
-import { getCurrentUser } from './app';
-import {
+import { getCurrentUser, loadLeaderboard, saveScorer } from './app';
+import Element, {
   username_div,
   option_btns,
   leaderboard,
   welcome_content,
   game_container,
+  leaderboard_data,
+  save_loading,
+  game_btns_c,
 } from '../helpers/element';
+
+const lb_item = ({ user, score }) => {
+  const tr = new Element().create('tr');
+
+  const nameTd = new Element().create('td');
+  nameTd.get().appendChild(document.createTextNode(user));
+  const scoreTd = new Element().create('td');
+  scoreTd.get().appendChild(document.createTextNode(score));
+
+  tr.get().appendChild(nameTd.get());
+  tr.get().appendChild(scoreTd.get());
+
+  return tr.get();
+};
 
 export const switchComponents = (value) => {
   switch (value) {
@@ -28,6 +44,12 @@ export const switchComponents = (value) => {
       leaderboard.show('block');
       option_btns.hide();
       username_div.hide();
+      loadLeaderboard().then((result) => {
+        leaderboard_data.get().innerHTML = '';
+        result.forEach(item => {
+          leaderboard_data.get().appendChild(lb_item(item));
+        });
+      });
       break;
     }
     default:
@@ -52,11 +74,19 @@ export const switchSections = (value) => {
   }
 };
 
-
 export const Start = () => {
   if (!getCurrentUser()) {
     switchComponents('username-c');
   } else {
     switchComponents('options');
   }
+};
+
+export const saveScoreInfo = (score) => {
+  game_btns_c.hide();
+  save_loading.show('block');
+  saveScorer({ user: getCurrentUser(), score }).then((data) => {
+    game_btns_c.show('flex');
+    save_loading.hide();
+  });
 };
