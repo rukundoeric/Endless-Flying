@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 export const gameConfig = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: 1000,
+  height: 500,
   parent: 'game-content',
 };
 

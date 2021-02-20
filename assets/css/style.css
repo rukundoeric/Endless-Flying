@@ -8,6 +8,7 @@ body {
 button {
   background-color: transparent;
   border: 0;
+  outline: none;
   transition: all 0.5s ease-in-out;
 }
 button:hover {
@@ -50,6 +51,9 @@ button:hover {
 .leaderboard table th {
   color: #136837;
 }
+.leaderboard #l-back-btn img {
+  height: 40px;
+}
 .leaderboard .data-content {
   max-height: 170px;
   overflow-y: scroll;
@@ -67,8 +71,23 @@ button:hover {
   font-size: 20px;
 }
 
+.game-title {
+  height: 60px;
+}
+.game-title .g-title {
+  width: 400px;
+}
+
+.game-btns-c button img {
+  height: 50px;
+}
+
 #next-btn img {
   height: 40px;
+}
+
+#option-btns img {
+  height: 50px;
 }
 
 .conte-div {

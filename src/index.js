@@ -1,3 +1,6 @@
-import Game from './modules/game';
+import { Start } from './modules/ui_control';
+import { startGame } from './modules/game';
+import './modules/events';
 
-Game();
+Start();
+startGame();
