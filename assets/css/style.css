@@ -5,18 +5,73 @@ body {
   background-color: #b9ffe4 !important;
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  transform: scale(1.08);
+}
+
 #game-content {
   border: 20px solid #16834c;
   border-radius: 30px;
   overflow: hidden;
 }
 
-.welcome-content {
-  border: 1px solid yellow;
+.title img {
+  width: 900px;
+}
+
+.actions-div {
+  position: relative;
+}
+.actions-div #username-div {
+  position: absolute;
+}
+
+.leaderboard {
+  border: 1px solid #59cb42;
+  background-color: #59cb42;
+  border-radius: 20px;
+  height: 300px;
+  width: 300px;
+}
+.leaderboard h6 {
+  color: #136837;
+  font-weight: 900;
+  font-size: 20px;
+}
+.leaderboard table {
+  width: 100%;
+}
+.leaderboard table td,
+.leaderboard table th {
+  color: #136837;
+}
+.leaderboard .data-content {
+  max-height: 170px;
+  overflow-y: scroll;
+  border-bottom: 2px solid #59cb42;
+}
+
+.input-text {
+  height: 40px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.171);
+  border: 2px solid #59cb42;
+  border-radius: 30px;
+  color: #136837;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#next-btn img {
+  height: 40px;
 }
 
 .conte-div {
-  border: 1px solid red;
   width: 500px !important;
   height: 350px !important;
 }

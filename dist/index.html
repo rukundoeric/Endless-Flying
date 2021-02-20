@@ -15,16 +15,91 @@
 <!--  -->
 <body class="d-flex justify-content-center align-items-center">
   <div class="welcome-content">
-    <div class="row">
-      <div class="col-lg-6 conte-div">
-        <img src="../assets/images/plane.png" alt="">
-      </div>
-      <div class="col-lg-6 conte-div d-flex justify-content-center align-items-center">
-        <div id="username-div">
-          <form class="d-flex flex-column" action="">
-            <input  class="text-center" type="text" placeholder="YOUR USERNAME">
-            <button type="submit">Next</button>
-          </form>
+    <div class="title d-flex justify-content-center align-items-center">
+      <img src="../assets/images/title.png" alt="">
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="row">
+        <div class="col-lg-6 conte-div">
+          <img src="../assets/images/plane.png" alt="">
+        </div>
+        <div class="actions-div col-lg-6 conte-div d-flex justify-content-center align-items-center">
+          <div class="d-none" id="username-div">
+            <form class="d-flex flex-column" action="">
+              <input class="text-center input-text" type="text" placeholder="YOUR USERNAME">
+              <button id="next-btn" type="submit" class="my-2">
+                <img src="../assets/images/next.png" type="submit" alt="">
+              </button>
+            </form>
+          </div>
+          <div id="option-btns" class="d-none flex-column">
+            <button id="next-btn" type="submit" class="my-2">
+              <img src="../assets/images/start.png" type="submit" alt="">
+            </button>
+            <button id="next-btn" type="submit" class="my-2">
+              <img src="../assets/images/leaderboard.png" type="submit" alt="">
+            </button>
+          </div>
+          <div id="option-btns" class="leaderboard p-4">
+            <h6 class="text-center">Leaderboard</h6>
+            <div class="data-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name:</th>
+                    <th>Score:</th>
+                  </tr>
+                </thead>
+                <tbody id="leaderboard-data">
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <td>Eric</td>
+                    <td>34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <button id="back-btn" class="my-2">
+                <img src="../assets/images/back.png" type="submit" alt="">
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
