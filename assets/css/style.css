@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #00a5a5 !important;
+}
+
+#game-content {
+  border: 20px solid #16834c;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
