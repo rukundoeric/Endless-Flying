@@ -12,6 +12,8 @@ const startScene = {
   },
   create() {
     game.add.tileSprite(0, 0, 1000, 600, 'background');
+    const info = 'Control a plane with "SPACE", Pause with "P"';
+    game.add.text(game.world.centerX - 300, 450, info, { font: '30px Bauhaus', fontWeight: 800, fill: '#006633' });
   },
 };
 

@@ -1,12 +1,14 @@
+/* eslint-disable camelcase */
 /* eslint-disable import/no-cycle */
 import axios from 'axios';
 import api from '../helpers/api';
+import { leaderboard_data } from '../helpers/element';
 import { switchComponents } from './ui_control';
 
 export const saveUser = (e) => {
   e.preventDefault();
   localStorage.setItem('endless_frying_current_user', new FormData(e.target).get('username'));
-  switchComponents('options');
+  if (leaderboard_data.get() != null) { switchComponents('options'); }
   return true;
 };
 
@@ -17,7 +19,7 @@ export const loadLeaderboard = async () => {
   return result.sort((a, b) => b.score - a.score);
 };
 
-export const saveScorer = async (obj) => {
+export const saveScore = async (obj) => {
   const { data } = await axios.post(api, obj);
   return data;
 };

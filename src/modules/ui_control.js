@@ -1,6 +1,6 @@
 /* eslint-disable import/no-cycle */
 /* eslint-disable camelcase */
-import { getCurrentUser, loadLeaderboard, saveScorer } from './app';
+import { getCurrentUser, loadLeaderboard, saveScore } from './app';
 import Element, {
   username_div,
   option_btns,
@@ -85,7 +85,7 @@ export const Start = () => {
 export const saveScoreInfo = (score) => {
   game_btns_c.hide();
   save_loading.show('block');
-  saveScorer({ user: getCurrentUser(), score }).then((data) => {
+  saveScore({ user: getCurrentUser(), score }).then(() => {
     game_btns_c.show('flex');
     save_loading.hide();
   });
