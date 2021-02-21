@@ -36,6 +36,26 @@ button {
   }
 }
 
+.game-btns-c {
+  button {
+    img {
+      height: 50px;
+    }
+  }
+}
+
+#option-btns {
+  img {
+    height: 50px;
+  }
+}
+
+#next-btn {
+  img {
+    height: 40px;
+  }
+}
+
 .leaderboard {
   border: 1px solid #59cb42;
   background-color: #59cb42;
@@ -82,35 +102,11 @@ button {
   font-size: 20px;
 }
 
-.welcome-content {
-  // border: 1px solid yellow;
-}
-
 .game-title {
   height: 60px;
 
   .g-title {
     width: 400px;
-  }
-}
-
-.game-btns-c {
-  button {
-    img {
-      height: 50px;
-    }
-  }
-}
-
-#next-btn {
-  img {
-    height: 40px;
-  }
-}
-
-#option-btns {
-  img {
-    height: 50px;
   }
 }
 

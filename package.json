@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
     "webpack": "webpack --watch",
+    "test": "jest",
     "sass": "sass --watch assets/scss/main.scss:assets/css/style.css"
   },
   "repository": {
@@ -42,6 +43,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "https": "^1.0.0"
   }
 }

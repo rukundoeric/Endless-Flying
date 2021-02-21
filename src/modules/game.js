@@ -8,7 +8,7 @@ let score = 0;
 
 const startScene = {
   preload() {
-    game.load.image('background', '../assets/images/start_bg.png');
+    game.load.image('background', '../assets/images/start_bg.PNG');
   },
   create() {
     game.add.tileSprite(0, 0, 1000, 600, 'background');

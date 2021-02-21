@@ -10,7 +10,7 @@ import {
 } from '../helpers/element';
 import { saveUser } from './app';
 import { switchComponents, switchSections } from './ui_control';
-import { play, pause } from './game';
+import { play, pause, startGame } from './game';
 
 username_form.get().addEventListener('submit', saveUser);
 leaderboard_btn.get().addEventListener('click', () => {
@@ -29,5 +29,6 @@ pause_btn.get().addEventListener('click', () => {
   pause();
 });
 menu_btn.get().addEventListener('click', () => {
+  startGame();
   switchSections('welcome-s');
 });

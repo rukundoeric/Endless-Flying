@@ -32,6 +32,18 @@ button:hover {
   position: absolute;
 }
 
+.game-btns-c button img {
+  height: 50px;
+}
+
+#option-btns img {
+  height: 50px;
+}
+
+#next-btn img {
+  height: 40px;
+}
+
 .leaderboard {
   border: 1px solid #59cb42;
   background-color: #59cb42;
@@ -76,18 +88,6 @@ button:hover {
 }
 .game-title .g-title {
   width: 400px;
-}
-
-.game-btns-c button img {
-  height: 50px;
-}
-
-#next-btn img {
-  height: 40px;
-}
-
-#option-btns img {
-  height: 50px;
 }
 
 .conte-div {
