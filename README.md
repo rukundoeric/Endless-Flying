@@ -9,8 +9,11 @@ Controls are simple, SPACE key to control a plane and Button P to pause or resum
 
 ## Getting Started
 
-- Clone this repo
-- Navigate to the project directory.
+- Clone this repo with.
+  - Open your CMD and type `git clone https://github.com/rukundoeric/Endless-Flying.git`
+- Navigate to the project directory and install all packages.
+  - In your CMD type `cd Endless-Flying`
+  - and the `npm install` 
 - Go to `dist/index.html` and run it with live-server.
 ![Image](assets/images/menu_s.PNG)
 - Now click on start button to start the game.

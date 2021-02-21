@@ -1,18 +1,17 @@
 /* eslint-disable import/no-cycle */
-/* eslint-disable camelcase */
 import { getCurrentUser, loadLeaderboard, saveScore } from './app';
 import Element, {
-  username_div,
-  option_btns,
+  usernameDiv,
+  optionBtns,
   leaderboard,
-  welcome_content,
-  game_container,
-  leaderboard_data,
-  save_loading,
-  game_btns_c,
+  welcomeContent,
+  gameContainer,
+  leaderboardData,
+  saveLoading,
+  gameBtnsC,
 } from '../helpers/element';
 
-const lb_item = ({ user, score }) => {
+const lbItem = ({ user, score }) => {
   const tr = new Element().create('tr');
 
   const nameTd = new Element().create('td');
@@ -29,25 +28,25 @@ const lb_item = ({ user, score }) => {
 export const switchComponents = (value) => {
   switch (value) {
     case 'options': {
-      option_btns.show('flex');
-      username_div.hide();
+      optionBtns.show('flex');
+      usernameDiv.hide();
       leaderboard.hide();
       break;
     }
     case 'username-c': {
-      username_div.show('flex');
-      option_btns.hide();
+      usernameDiv.show('flex');
+      optionBtns.hide();
       leaderboard.hide();
       break;
     }
     case 'leaderboard': {
       leaderboard.show('block');
-      option_btns.hide();
-      username_div.hide();
+      optionBtns.hide();
+      usernameDiv.hide();
       loadLeaderboard().then((result) => {
-        leaderboard_data.get().innerHTML = '';
+        leaderboardData.get().innerHTML = '';
         result.forEach(item => {
-          leaderboard_data.get().appendChild(lb_item(item));
+          leaderboardData.get().appendChild(lbItem(item));
         });
       });
       break;
@@ -60,13 +59,13 @@ export const switchComponents = (value) => {
 export const switchSections = (value) => {
   switch (value) {
     case 'welcome-s': {
-      welcome_content.show('block');
-      game_container.hide();
+      welcomeContent.show('block');
+      gameContainer.hide();
       break;
     }
     case 'game-s': {
-      welcome_content.hide();
-      game_container.show('block');
+      welcomeContent.hide();
+      gameContainer.show('block');
       break;
     }
     default:
@@ -83,10 +82,10 @@ export const Start = () => {
 };
 
 export const saveScoreInfo = (score) => {
-  game_btns_c.hide();
-  save_loading.show('block');
+  gameBtnsC.hide();
+  saveLoading.show('block');
   saveScore({ user: getCurrentUser(), score }).then(() => {
-    game_btns_c.show('flex');
-    save_loading.hide();
+    gameBtnsC.show('flex');
+    saveLoading.hide();
   });
 };

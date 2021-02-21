@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 export default class Element {
   find(value) {
     this.elm = document.querySelector(value);
@@ -36,23 +35,23 @@ export default class Element {
   }
 }
 
-export const welcome_content = new Element().find('#welcome-content');
-export const game_container = new Element().find('#game-container');
+export const welcomeContent = new Element().find('#welcome-content');
+export const gameContainer = new Element().find('#game-container');
 
-export const username_div = new Element().find('#username-div');
-export const option_btns = new Element().find('#option-btns');
+export const usernameDiv = new Element().find('#username-div');
+export const optionBtns = new Element().find('#option-btns');
 export const leaderboard = new Element().find('#leaderboard');
 
-export const leaderboard_data = new Element().find('#leaderboard-data');
+export const leaderboardData = new Element().find('#leaderboard-data');
 
-export const username_form = new Element().find('#username-form');
-export const start_btn = new Element().find('#start-btn');
-export const leaderboard_btn = new Element().find('#leaderboard-btn');
-export const l_back_btn = new Element().find('#l-back-btn');
+export const usernameForm = new Element().find('#username-form');
+export const startBtn = new Element().find('#start-btn');
+export const leaderboardBtn = new Element().find('#leaderboard-btn');
+export const lbackBtn = new Element().find('#l-back-btn');
 
-export const play_btn = new Element().find('#play-btn');
-export const pause_btn = new Element().find('#pause-btn');
-export const menu_btn = new Element().find('#menu-btn');
+export const playBtn = new Element().find('#play-btn');
+export const pauseBtn = new Element().find('#pause-btn');
+export const menuBtn = new Element().find('#menu-btn');
 
-export const save_loading = new Element().find('#save-loading');
-export const game_btns_c = new Element().find('#game-btns-c');
+export const saveLoading = new Element().find('#save-loading');
+export const gameBtnsC = new Element().find('#game-btns-c');
