@@ -1,10 +1,23 @@
 # Platform Game (name: Endless Flying)
 ![Image](assets/images/plane.png)
+
 This Game is built with HTML5, JAVASCRIPT and PHASER 2 and It is only compatible with screen bigger than 1024W at the moment. 
 
 The goal is to try to go through the pipes without hitting any of them.
 
 Controls are simple, SPACE key to control a plane and Button P to pause or resume. 
+
+## Getting Started
+
+- Clone this repo
+- Navigate to the project directory.
+- Go to `dist/index.html` and run it with live-server.
+![Image](assets/images/menu_s.PNG)
+- Now click on start button to start the game.
+![Image](assets/images/game_s_s.PNG)
+- Then start playing
+![Image](assets/images/game_p_s.PNG)
+- Note: Remeber to use SPACE key to control a plane and Button P to pause or resume.
 
 ## Built With
 
@@ -18,12 +31,6 @@ Controls are simple, SPACE key to control a plane and Button P to pause or resum
 ## Live Demo
 
 [Live Demo Link](https://rukundoeric.github.io/Endless-Flying/dist/)
-
-## Getting Started
-
-- Clone this repo
-- Navigate to the project directory.
-- Go to `dist/index.html` and run it with live-server.
 
 ## Authors
 

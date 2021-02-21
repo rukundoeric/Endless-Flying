@@ -1,6 +1,5 @@
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable no-undef */
-import { gameConfig } from './config';
+import gameConfig from './config';
 import { saveScoreInfo } from './ui_control';
 
 const game = new Phaser.Game(gameConfig);
